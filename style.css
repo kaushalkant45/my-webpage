@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#000;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 2em;
+    margin-left: 20px; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; 
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  
+  /* Home section */
+  .home {
+  background-image: url('https://img.freepik.com/free-vector/gradient-golden-luxury-background_23-2149055480.jpg?w=996&t=st=1715601822~exp=1715602422~hmac=8839e4e27a3a62f778ba7fabfff9a891ff46510804371754680da9f0ee9ffef6'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  height: 100vh; 
+  color: #fff; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+  .home .max-width {
+    padding: 0 20px;
+    margin: auto;
+  }
+  
+  .home h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .home p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  .content{
+    margin-top:0%;
+  }
+  
+  /* About section */
+  .about {
+    background-color: #f1f1f1; 
+    padding: 100px 0;
+    color: #333; 
+  }
+  
+  .about .max-width {
+    padding: 0 20px;
+    margin: auto;
+  }
+  
+  .about .content {
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Contact section */
+  .contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .contact .max-width {
+    padding: 0 20px;
+    margin: auto;
+  }
+  
+  .contact .content {
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
