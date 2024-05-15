@@ -22,6 +22,7 @@
           <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a></li>
           <li><i class="fa-solid fa-code"></i><a href="#services">Services</a></li>
           <li><i class="fa-solid fa-phone"></i><a href="#contact">Contact</a></li>
+          <li><i class="fa-solid fa-user"></i><a href="#" id="signup">Signup</a></li>
         </ul>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -29,9 +30,29 @@
       </nav>
     </header>
 
+     <!-- Signup Form Popup -->
+     <div id="signupFormPopup" class="signup-form-popup">
+      <div class="signup-form-container">
+        <span class="close" id="closeSignupForm">&times;</span>
+        <h3 class="form-title">Sign Up</h3>
+        <form id="signupFormContent">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="signupSuccessMessage" class="hidden">Done! Thank you for signing up.</div>
+      </div>
+    </div>
+    
+
+
     <!-- Home section -->
     
-    <section class="home">
+    <section class="home section" id="home">
       <div class="max-width">
         <div class="content">
           <h2>Welcome to <span class="heading">hikmaSpark</span></h2>
@@ -48,7 +69,7 @@
 
     <!-- About section -->
     
-    <section class="about">
+    <section class="about section" id="about">
       <div class="max-width">
           <h2 class="title">About Us</h2>
           <div class="about-content">
@@ -71,7 +92,7 @@
       </div>
   </section>
     <!-- Services section -->
-    <section class="services">
+    <section class="services section" id="services">
       <div class="max-width">
           <h2 class="title">Our Services</h2>
           <div class="serv-content">
@@ -112,7 +133,7 @@
   </section>
 
     <!-- Contact section -->
-    <section class="contact">
+    <section class="contact section" id="contact">
       <div class="max-width">
           <h2 class="title">Contact Us</h2>
           <div class="contact-content">
@@ -184,5 +205,6 @@
     <footer>
       <span>Created By <a>HikmaSpark</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
