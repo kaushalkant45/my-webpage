@@ -9,16 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="logo">
           <i class="fa-brands fa-slack"></i>
           <p>HikmaSpark</p>
         </div>
         <ul class="nav-links">
+          
           <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+          <li><i class="fa-brands fa-github"></i><a href="#github">Github</a></li>
           <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a></li>
           <li><i class="fa-solid fa-code"></i><a href="#services">Services</a></li>
           <li><i class="fa-solid fa-phone"></i><a href="#contact">Contact</a></li>
@@ -67,6 +71,21 @@
       </div>
     </section>
 
+    <!-- github section -->
+    <section class="github section" id="github">
+      <div class="max-width">
+        <h2 class="title">Github Profile</h2>
+        <div class="github-card">
+          <div class="box">
+            <input type="text" id="usernameInput" placeholder="Enter your username">
+            <button class="btn" onclick="fetchUserData()">Get data</button>
+          </div>
+          <hr>
+          <div id="userData"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- About section -->
     
     <section class="about section" id="about">
@@ -97,7 +116,7 @@
           <h2 class="title">Our Services</h2>
           <div class="serv-content">
               <div class="card">
-                  <div class="box">
+                  <div class="git-box">
                       <i class="fas fa-paint-brush"></i>
                       <div class="text">Creative Content</div>
                       <p>From captivating visuals to compelling copywriting, we know how to grab attention and keep it. 
